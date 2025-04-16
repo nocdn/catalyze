@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100..800&display=swap");
+@import "tailwindcss";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -7,31 +10,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
 }
 
-.card {
-  border: 1px solid rgb(196, 196, 196);
-  border-radius: 16px;
-  width: fit-content;
-  padding: 1rem;
-  max-width: 14rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 2rem;
+#root {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+  width: 100vw;
+}
 
-  img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  p {
-    font-family: monospace;
-  }
+@theme {
+  --font-plex-mono: "IBM Plex Mono", monospace;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+  --font-geist-mono: "Geist Mono", monospace;
+  --font-geist: "Geist", sans-serif;
 }
