@@ -1,9 +1,9 @@
-import ChangingComponent from "./ChangingComponent";
+import ToDo from "./ToDo";
 
 function App() {
   return (
     <main className="flex flex-col gap-4 font-plex-mono font-medium">
-      <ChangingComponent />
+      <ToDo />
     </main>
   );
 }
